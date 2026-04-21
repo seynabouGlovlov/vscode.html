@@ -1,0 +1,73 @@
+.rectangle1{
+display: grid;
+grid-template-columns: 1.25fr 0.95fr ;
+gap: 24px;
+background-color: azure;
+border: 1px solid blue;
+border-radius: 999px;
+padding: 0.34rem 0.72rem;
+box-shadow:0 8px 24px rgba(26,39,64, 0.05) ;
+}
+.titresection{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: blue;
+    background: lightblue;
+    border: 1px solid blue;
+    border-radius: 999px;
+    padding: 0.34rem 0.72rem;
+    margin-bottom: 10px;
+}
+.rectangle1 h1{
+font-size: clamp(1.8rem,3.2vw, 3rem );
+line-height:1.1 ;
+margin-bottom: 12px;
+}
+.rectangle1 p{
+   color: grey; 
+   margin-bottom: 16px;
+   max-width: 62ch;
+
+}
+.herovoirmesprojets{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bouton{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0.68rem 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.voir{
+    color: white;
+    background-color: blue;
+}
+.mecontacter{
+    color: blue;
+    background-color: lightblue;
+    border-color: aqua;
+}
+.rectangle200{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,1fr));
+    gap: 10px;
+    margin-top: 18px;
+}
+.rectangle200 div{
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+.rectangle200 h2{
+    display: block;
+    color: blueviolet;
+    margin-bottom: 4px;
+}
+.rectangle200 p{
+    color: lightblue;
+    font-size: 0.82rem;
+}
