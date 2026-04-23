@@ -24,6 +24,13 @@
             border: 2px solid black;
             border-radius: 50%;
         }
+        .logo p{
+            text-align: center;
+            font-weight: bold;
+            color: blue;
+            height: 200px;
+            font-size: 1.2rem;
+        }
         .menu1{
             width: 35%;
             display: flex;
@@ -44,69 +51,102 @@
             margin: 20px auto;
         }
         .rectangle2{
-            height: 15px;
-            width: 10%;
+            width: 13%;
             border: 1px solid lightblue;
             border-radius: 10px;
             margin: 0 auto;
+            text-align: center;
+            max-width: 100%;
         }
         .rectangle4{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
             gap: 15px;
-            width: 75%;
+            width: 90%;
             margin: 20px auto;
+           
         }
         .rectangle3{
-            height: 200px;
-            width: 45%;
+            width: 100%;
             border: 1px solid transparent;
             border-radius: 10px;
             background-color: aqua;
+            text-align: center;
+        }
+         @media (max-width: 768px) {
+            .rectangle4 {
+                grid-template-columns:repeat(2, 1fr);
+            }
+        }
+         @media (max-width: 376px) {
+            .rectangle4 {
+                grid-template-columns:repeat(1, 1fr);
+            }
         }
         .rectangle6{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            width: 70%;
+            width: 80%;
             margin: 20px auto;
         }
+        .rectangle7 h2{
+            padding: 5px;
+            color: rgb(81, 145, 194);
+        }
+         .rectangle7 p{
+            padding: 5px;
+        }
         .rectangle7{
-            height: 300px;
-            width: 35%;
+            width: 100%;
             border: 1px solid lightblue;
             border-radius: 10px;
             background-color: aliceblue;
         }
+         @media (max-width: 768px) {
+            .rectangle6 {
+                grid-template-columns:repeat(2, 1fr);
+            }
+        }
+         @media (max-width: 376px) {
+            .rectangle6 {
+                grid-template-columns:repeat(1, 1fr);
+            }
+        }
         .rectangle7 img{
-          height: 145px;
-          object-fit:fill ;
           width: 100%;
+          max-width: 100%;
         }
         .rectangle8{
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
             width: 70%;
             margin: 20px auto;
         }
+         @media (max-width: 1024px) {
+            .rectangle8 {
+                grid-template-columns:repeat(2, 1fr);
+            }
+        }
+         @media (max-width: 376px) {
+            .rectangle8 {
+                grid-template-columns:repeat(1, 1fr);
+            }
+        }
         .rectangle9{
-            height: 100px;
-            width: 22%;
+            width: 100%;
             border: 1px solid lightblue;
             border-radius: 8px;
+            text-align: center;
         }
         .rectangle10{
-            height: 250px;
             width: 70%;
             border: 1px solid aqua;
             border-radius: 10px;
             margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            padding: 20px;
         }
         .rectangle10 a{
             background-color: lightblue;
@@ -142,13 +182,15 @@
         }
         .rectangle1{
 display: grid;
+max-width: 100%;
+width: 80%;
 grid-template-columns: 1.25fr 0.95fr ;
-gap: 24px;
 background-color: azure;
 border: 1px solid blue;
 border-radius: 10px;
 padding: 0.34rem 0.72rem;
 box-shadow:0 8px 24px rgba(26,39,64, 0.05) ;
+height: 100%;
 }
 .titresection{
     display: inline-block;
@@ -175,6 +217,7 @@ margin-bottom: 12px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .bouton{
     border: 1px solid transparent;
@@ -196,15 +239,13 @@ margin-bottom: 12px;
     display: grid;
     grid-template-columns: repeat(3, minmax(100px,1fr));
     gap: 40px;
-    margin-top: 18px;
 }
 .rectangle200 div{
     border: 1px solid lightblue;
     border-radius: 10px;
-    padding: 10px;
     background-color: aqua;
-    height: 80px;
-    width: 145px;
+    width: 100%;
+    Padding: 10px;
     
 }
 .rectangle200 h2{
@@ -222,6 +263,7 @@ margin-bottom: 12px;
 <body>
     <div class="menu">
         <div class="logo">
+            <p>SG</p>
             <img src="" alt="">
         </div>
         <div class="menu1">
@@ -245,7 +287,7 @@ margin-bottom: 12px;
                 <a class="bouton mecontacter" href="#contact">me contacter</a>               
             </div>
             <div class="rectangle200">
-                <div>
+                <div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                     <h2>5+</h2>
                     <p>Projet realise</p>
                 </div>
@@ -261,7 +303,9 @@ margin-bottom: 12px;
             </div>
                 
         </div>
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <Img src="IMAGE1.jpeg" alt="Hero Image">
+        </div>
     </div>
     <div class="rectangle2">A propos de moi</div>
     <div class="rectangle4">
